@@ -1,0 +1,1189 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS_word_graph';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/foto.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/foto.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS_word_graph.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UAS_word_graph.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pymupdf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pymupdf
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading pymupdf-1.26.7-cp310-abi3-manylinux_2_28_x86_64.whl.metadata (3.4 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading pymupdf-1.26.7-cp310-abi3-manylinux_2_28_x86_64.whl (24.1 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/24.1 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.9/24.1 MB</span> <span class=" -Color -Color-Red">341.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.9/24.1 MB</span> <span class=" -Color -Color-Red">341.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">24.1/24.1 MB</span> <span class=" -Color -Color-Red">58.1 MB/s</span>  <span class=" -Color -Color-Yellow">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: pymupdf
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed pymupdf-1.26.7
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;google&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/PPW
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/PPW
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pymupdf</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">pymupdf</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;main.pdf&quot;</span><span class="p">)</span> <span class="c1"># open a document</span>
+<span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="c1"># create a text output</span>
+<span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">:</span> <span class="c1"># iterate the document pages</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="c1"># get plain text (is in UTF-8)</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="c1"># write text of page</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">((</span><span class="mi">12</span><span class="p">,)))</span> <span class="c1"># write page delimiter (form feed 0x0C)</span>
+<span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
+!pip install nltk
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>  <span class="c1"># hanya perlu sekali</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt_tab&#39;</span><span class="p">)</span>  <span class="c1"># opsional, untuk versi terbaru NLTK (≥3.8.2)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to /root/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;output.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">teks</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">teks</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>  <span class="c1"># tampilkan 200 karakter pertama</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>JITET (Jurnal Informatika dan Teknik Elektro Terapan) 
+ 
+Vol. 13 No. 2, pISSN: 2303-0577 eISSN: 2830-7062              http://dx.doi.org/10.23960/jitet.v13i2.6250 
+ 
+ 
+ 496 
+ 
+ANALISIS SENTIMEN TERHAD
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install: pip install nltk</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+
+
+<span class="n">sentences</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;JITET (Jurnal Informatika dan Teknik Elektro Terapan) \n \nVol.&#39;, &#39;13 No.&#39;, &#39;2, pISSN: 2303-0577 eISSN: 2830-7062              http://dx.doi.org/10.23960/jitet.v13i2.6250 \n \n \n 496 \n \nANALISIS SENTIMEN TERHADAP ULASAN PENGGUNA \nAPLIKASI THREADS INSTAGRAM DI PLAYSTORE \nMENGGUNAKAN ALGORITMA NAIVE BAYES \n \nLa Ode Lukmana1*, Dian Ramadani L2, Putri Elisya3 \n1,2 Universitas Halu Oleo; Kampus Bumi Tridharma Anduonohu, Jalan H.E.A.&#39;, &#39;Mokodompit, Kodya \nKendari, Sulawesi Tenggara 93232; Telp.&#39;, &#39;0401-3194163 /Fax.&#39;, &#39;0401-3190006 \n \n \nReceived: 18 Februari 2025 \nAccepted: 24 Maret 2025 \nPublished:   14 April 2025 \n \nKeywords:  \nAnalisis Sentimen, Naive \nBayes, Threads Instagram, \nPlaystore.&#39;, &#39;Corespondent Email: \nlaode.lukmana88@gmail.com \n \n \n \nAbstrak.&#39;, &#39;Analisis sentimen atau bisa disebut juga opinion mining merupakan \nproses memahami, mengekstrak dan mengolah data tekstual secara otomatis \nuntuk mendapatkan informasi sentimen yang terkandung dalam suatu kalimat \nopini terhadap sebuah masalah atau objek oleh seseorang, apakah cenderung \nberopini negatif atau positif.&#39;, &#39;Penelitian ini bertujuan untuk mengklasifikasi \nReview Pengguna Aplikasi Threads di PlayStore menjadi 2 sentimen yaitu \npositif dan negatif.&#39;, &#39;Ulasan pengguna aplikasi yang terdapat di playstore \ntersebut dapat dimanfaatkan sebagai bahan analisis sentimen untuk \nmengetahui Seberapa puas penggunaan aplikasi dan hal apa saja yang bisa di \nperbaiku untuk kepuasan pengguna aplikasi.&#39;, &#39;Data yang digunakan terdiri 1001 \nulasan aplikasi yang didibagi menjadi 2 yaitu untuk data latih sebanyak 80% \ndata dan 20% data untuk data uji.&#39;, &#39;Pengklasifikasian data ulasan menggunakan \ntext mining dengan Naïve Bayes Classifier.&#39;, &#39;Sebelum klasifikasi, dilakukan \nbeberapa tahap pemrosesan teks seperti case folding, normalisasi, tokenisasi \ndan stopwords removal.&#39;, &#39;Berdasarkan pengujian didapatkan akurasi sebesar \n82%, presisi 70%, Recall 60% dan F1-Score 65%.&#39;, &#39;Berdasarkan pengujian \ntersebut dapat disimpulkan bahwa penelitian ini dapat digunakan untuk \nanalisis hasil sentimen dengan cepat Playstore \nAbstract.&#39;, &#39;Sentiment analysis, also known as opinion mining, is the process of \nunderstanding, extracting, and automatically processing textual data to obtain \nsentiment information contained in a sentence or opinion about an issue or \nobject by someone, whether it tends to be negative or positive.&#39;, &#39;This study aims \nto classify User Reviews of the Threads Application on PlayStore into 2 \nsentiments, namely positive and negative.&#39;, &#39;The user reviews of the application \non PlayStore can be utilized as sentiment analysis material to determine how \nsatisfied the application users are and what can be improved for user \nsatisfaction.&#39;, &#39;The data used consists of 1001 application reviews divided into \n80% for training data and 20% for testing data.&#39;, &#39;The classification of review \ndata uses text mining with Naïve Bayes Classifier.&#39;, &#39;Before classification, \nseveral stages of text preprocessing such as case folding, normalization, \ntokenization, and stopwords removal are performed.&#39;, &#39;Based on the testing, an \naccuracy of 82%, precision of 70%, recall of 60%, and F1-Score of 65% were \nobtained.&#39;, &#39;Based on these tests, it can be concluded that this research can be \nused for quick sentiment analysis of PlayStore results.&#39;, &#39;1.&#39;, &#39;PENDAHULUAN  \nMedia sosial adalah suatu platform \ndengan fasilitas yang membuat penggunanya \ndalam hal ini masyarakat dapat melakukan \naktivitas sosial.&#39;, &#39;Aktivitas sosial ini bisa seperti \nkomunikasi sebagai interaksi sosial dengan \nmengirim atau memberi informasi, berbagi foto \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 497 \n \ndan video dan lain sebagainya sesuai dengan \nfasilitas yang dimiliki.&#39;, &#39;Dilansi dari SliceBlog per tahaun 2023 \nstatistik penggunaan media sosial Indonesia \n213 juta penduduk Indonesia sudah memiliki \nakses internet, setiap orang setidaknya memiliki \n1 perangkat seluler, dan indonesia memiliki \npersentase pengguna media sosial yang cukup \ntinggi, yakni 60% dari jumlah populasi, dimana \nini berarti terdapat 3 pengguna media sosial di \nsetiap 5 penduduk.&#39;, &#39;Youtube, dan Facebook \nmasih menjadi media sosial terpopuler di \nIndonesia.&#39;, &#39;TikTok, di urutan ketiga, telah \nberhasil mengalahkan popularitas Instagram.&#39;, &#39;Kemudian ada Facebook Messenger, Twitter, \nLinkedIn, dan Snapchat yang tidak sepopuler 4 \nplatform lainnya.&#39;, &#39;Rabu, 5 Juli 2023, CEO Meta Mark \nZuckerberg resmi merilis aplikasi barunya \nbernama Threads.&#39;, &#39;Threads adalah aplikasi \nmedia sosial baru yang dirilis oleh Instagram \ndengan fitur dan fungsi yang mirip seperti \nTwitter.&#39;, &#39;Threads adalah aplikasi media sosial \ntext-based atau berbasis teks dimana pengguna \nbisa membagikan unggahan dalam bentuk teks, \nkalimat, dan tulisan [1].&#39;, &#39;Salah satu cara untuk melihat respon \nmasyarakat di dalam penggunaan aplikasi \nThreads yaitu dengan analisis sentimen.&#39;, &#39;Analisis sentimen merupakan salah satu cabang \ndari Text mining, dimana pada proses ini dapat \nmenganalisa dokumen atau sumber teks untuk \nmengelompokkan suatu opini atau tulisan \nkedalam opini positif, netral maupun negatif \nsecara otomatis [2].&#39;, &#39;Analisis sentimen sering \ndijumpai pada media sosial twitter dan \nInstagram.&#39;, &#39;Text mining adalah salah satu teknik \nyang dapat digunakan untuk melakukan \nklasifikasi dokumen, clustering, information \nextraction, analisis sentimen dan information \nretrieval dimana text mining merupakan variasi \ndari data mining yang berusaha menemukan \npola yang menarik dari sekumpulan data \ntekstual yang berjumlah besar [3] \nAnalisis sentimen adalah komputasi dari \nsentimen, opini, dan emosi terhadap suatu objek \nyang ditumpahkan dalam bentuk teks.&#39;, &#39;Analisis \nini digunakan untuk mengekstrak atribut dan \nkomponen yang ada didalamnya serta untuk \nmenentukan \nkomentar \nyang \nterkategori \nbermakna negatif atau positif [4].&#39;, &#39;Analisis \nsentimen dapat dilakukan dengan beberapa \nalgoritme Pembelajaran mesin diantaranya NV \n(Naive Bayes) [5].&#39;, &#39;Penelitian yang dilakukan oleh [6] \nmenghasilkan dari hasil pengujian yang \ndilakukan Rapidminer terhadap 1.500 data \ntesting dihasilkan nilai akurasi sebesar 97,13%, \ndengan nilai precision 1 Sementara pada Class \nRecall dihasilkan nilai 95,49% (positive class: \nnegative) dan nilai AUC 0,980.&#39;, &#39;Terkait dengan \njudul penelitian yang akan diusulkan mengenai \nalgoritma naïve bayes, terdapat penelitian \nterkait yaitu yang dilakukan oleh[7], bahwa \nmodel \nini \nbekerja \nsangat \nbaik \ndalam \nmengklasifikasikan sentimen negatif dengan \nprecision, recall, dan F1-score sekitar 0.90.&#39;, &#39;Namun, performa model jauh lebih rendah \nuntuk sentimen positif dan netral, dengan \nprecision, recall, dan F1-score yang berkisar \nantara 0.15 hingga 0.38.&#39;, &#39;Hal ini menunjukkan \nbahwa model Naive Bayes lebih efektif untuk \nmendeteksi sentimen negatif tetapi memerlukan \nperbaikan untuk meningkatkan klasifikasi \nsentimen positif dan netral.&#39;, &#39;Penelitian lainnya \nyang dilakukan oleh [8] menghasilkan akurasi \nsebesar 94% untuk algoritma naïve bayes \ndibandingkan algoritma SVM dengan nilai \nakurasi sebesar 75.50%.&#39;, &#39;Hal ini menunjukkan \nbahwa algoritma naïve bayes lebih unggul \ndibandingkan \nalgoritma \nSVM \ndalam \nmelakukan klasifikasi di komentar twitter.&#39;, &#39;Pengolahan data pada penelitian ini \nmenggunakan bahasa pemrograman phyton di \ngoogle collab.&#39;, &#39;Oleh karena itu, analisis \nsentimen terhadap ulasan pengguna aplikasi \nthreads instagram di playstore menggunakan \nalgoritma naive BAYES diharapkan dapat \nmemberikan feedback untuk penyempurnaan \nAplikasi \nThreads \nInstagram.&#39;, &#39;Sehingga \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 498 \n \nPerusaahaan Instagram dapat mengoptimalkan \nkembali aplikasi ini lebih baik \n \n2.&#39;, &#39;TINJAUAN PUSTAKA \n2.1 \nMedia Sosial \nMedia sosial adalah platform yang \nmemungkinkan pengguna untuk berinteraksi, \nberbagi konten, dan membangun komunitas \nsecara \nonline.&#39;, &#39;Pengertian \nmedia \nsosial \nmencakup berbagai aplikasi dan situs web yang \nmemfasilitasi komunikasi antar individu dan \nkelompok [9].&#39;, &#39;Dalam konteks Indonesia, \nstatistik menunjukkan bahwa sekitar 60% dari \npopulasi memiliki akses ke media sosial, \ndengan platform seperti Instagram dan Threads \nyang semakin populer [10].&#39;, &#39;Perkembangan \nplatform media sosial ini mencerminkan \nperubahan \ndalam \ncara \nmasyarakat \nberkomunikasi dan berbagi informasi.&#39;, &#39;2.2 \nAplikasi Threads \nAplikasi Threads diluncurkan oleh Meta \nsebagai alternatif untuk platform berbasis teks \nseperti Twitter.&#39;, &#39;Threads menawarkan fitur yang \nmirip dengan Twitter, namun dengan tampilan \ndan \nfungsi \nyang \nberbeda.&#39;, &#39;Tujuan \ndari \npeluncuran Threads adalah untuk memberikan \nruang bagi pengguna untuk berbagi pemikiran \ndan interaksi sosial dalam format teks, di tengah \nmeningkatnya \nkebutuhan \nakan \nplatform \nkomunikasi yang lebih terbuka dan interaktif \n[11].&#39;, &#39;2.3 \nAnalisis Sentimen \nAnalisis sentimen adalah metode yang \ndigunakan \nuntuk \nmengidentifikasi \ndan \nmengklasifikasikan opini dalam teks menjadi \nkategori positif, negatif, atau netral [12].&#39;, &#39;Tujuan \ndari analisis sentimen adalah untuk memahami \npersepsi masyarakat terhadap suatu produk atau \nlayanan, \nyang \ndapat \nmembantu \ndalam \npengambilan \nkeputusan[13].&#39;, &#39;Studi \nkasus \npenggunaan analisis sentimen telah dilakukan \npada berbagai platform, termasuk Twitter dan \nInstagram, \nuntuk \nmengevaluasi \nrespon \npengguna terhadap layanan dan produk tertentu \n[14].&#39;, &#39;2.4 \nText Mining \nText \nmining \nadalah \nteknik \nyang \ndigunakan untuk mengekstrak informasi dari \ndata tekstual.&#39;, &#39;Dalam konteks analisis sentimen, \ntext mining berfungsi untuk mengklasifikasikan \ndan menganalisis data ulasan pengguna[15].&#39;, &#39;Proses kerja text mining mencakup berbagai \ntahapan, seperti clustering, klasifikasi, dan \ninformation retrieval, yang memungkinkan \npengolahan \ndata \ndalam \nskala \nbesar[16].Implementasi text mining dalam \nanalisis \ndata \nulasan \npengguna \ndapat \nmemberikan wawasan yang lebih dalam tentang \nopini masyarakat terhadap aplikasi tertentu.&#39;, &#39;2.5 \nAlgoritma Naive Bayes \nAlgoritma Naive Bayes adalah metode \nklasifikasi yang sering digunakan dalam \nanalisis sentimen karena kesederhanaan dan \nefektivitasnya.&#39;, &#39;[17] Kelebihan dari algoritma ini \ntermasuk kemampuannya untuk menangani \ndata besar dan imbalanced data, meskipun ada \nbeberapa \nkekurangan, \nseperti \nasumsi \nindependensi antar fitur.&#39;, &#39;Perbandingan Naive \nBayes dengan algoritma lain, seperti KNN dan \nSVM, menunjukkan bahwa Naive Bayes sering \nkali memberikan hasil yang kompetitif dalam \nkonteks analisis sentimen[18].&#39;, &#39;3.&#39;, &#39;METODE PENELITIAN  \nTahapan penelitian yang akan dilakukan \npada penelitian ini yaitu sebagai berikut: \n \n \nGambar 2.&#39;, &#39;1 Tahapan Penelitian \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 499 \n \nBerikut adalah penjelasan dari Alur \nMetode Penelitian : \n2.1 \nIdentifikasi Masalah \nMengamati \ndan \nmenemukan \npermasalahan yang terjadi pada Aplikasi \nThreads \nInstgram \ndilihat \ndari \nkomentar \npengguna aplikasi pada Google Playstore.&#39;, &#39;2.2 \nPenentuan Tujuan \nBerfungsi untuk lebih memperjelas \nkerangka apa saja yang menjadi sasaran \npenelitian ini.&#39;, &#39;Seperti yang sudah ditulis di Bab \nI bahwa tujuan penelitian ini adalah untuk \nmelakukan \nklasifikasi \nterhadap \nkomentar \npengguna aplikasi Tokopedia di Google \nPlaystore dengan menggunakan algoritma \nNaive Bayes serta menghitung akurasinya  \n2.3 \nStudi Pustaka \nBertujuan untuk mengetahui teori-teori \napa yang akan digunakan untuk menyelesaikan \npermasalahan \nyang \nakan \nditeliti, \nserta \nmendapatkan dasar-dasar referensi yang kuat \nbagi peneliti \n2.4 \nPengumpulan Data \nProses pengumpulan data dan input \ndalam sistem ini dimulai dengan data web \nscraping, proses web scraping yang dilakukan \nadalah dengan menggunakan pemrograman \npython dengan menginstall libray “google-\nplay-scraper”  yang kemudian di berikan label \nsentimen otomatis berdasarkan score ulasan \npengguna \n \nGambar 2.&#39;, &#39;2 Data Sentimen \n2.5 \nPreprocessing \nPreprocessing merupakan salah satu \ntahapan yang penting untuk data pada proses \nmining.&#39;, &#39;Data yang digunakan dalam proses \nmining tidak selamanya dalam kondisi yang \nideal untuk diproses.&#39;, &#39;Terkadang pada data \ntersebut terdapat berbagai permasalahan yang \ndapat menggangu hasil dari proses mining itu \nsendiri seperi diantaranya adalah missing value, \ndata redundant, outliers, ataupun format data \nyang tidak sesuai dengan sistem.&#39;, &#39;Oleh \nkarenanya untuk mengatasi permasalahan \ntersebut \ndibutuhkan \ntahap \nPreprocessing.&#39;, &#39;Preprocessing \nsalah \nsatu \ntahapan \nyang  \nmenghilangkan permasalahan - permasalahan \nyang dapat mengganggu hasil daripada proses \ndata, Pada tahap ini terdapat tahapan yang di \nlalui diantaranya : \n1.&#39;, &#39;Cleaning pada tahapan ini bertujuan \nuntuk \nmembershikan \ndata \ndari \ndata/komentar yang ganda, dan atribut \ntidak diperlukan yang terdapat pada data \nyang telah di scrapping \n \nGambar 2.&#39;, &#39;3 Data Cleaning \n2.&#39;, &#39;Case Folding proses mengubah seluruh \nhuruf menjadi huruf kecil.&#39;, &quot;Pada proses \nini karakter-karakter &#39;A&#39;-&#39;Z&#39; yang terdapat \npada data diubah kedalam karakter &#39;a&#39;-&#39;z&#39;.&quot;, &#39;Gambar 2.&#39;, &#39;4 Case Folding \n3.&#39;, &#39;Stopword adalah kata umum yang \nbiasanya muncul dalam jumlah besar dan \ndianggap tidak memiliki makna.&#39;, &#39;Contoh \nstopword dalam bahasa Indonesia adalah \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 500 \n \n“yang”, “dan”, “di”, “dari”, dll.&#39;, &#39;Makna di \nbalik penggunaan stopword yaitu dengan \nmenghapus kata-kata yang memiliki \ninformasi rendah dari sebuah teks, kita \ndapat fokus pada kata-kata penting \nsebagai gantinya.&#39;, &#39;Gambar 2.&#39;, &#39;5 StopWord \n4.&#39;, &#39;Tokenizing \nproses \npemisahan \nteks \nmenjadi potongan-potongan yang disebut \nsebagai token untuk kemudian di analisa.&#39;, &#39;Kata, angka, simbol, tanda baca dan \nentitas penting lainnya dapat dianggap \nsebagai token.&#39;, &#39;Didalam NLP, token \ndiartikan \nsebagai \n“kata” \nmeskipun \ntokenize juga dapat dilakukan pada \nparagraf maupun kalimat \n \nGambar 2.&#39;, &#39;6 Tokenizing \n5.&#39;, &#39;Stemming \nproses \npemetaan \ndan \npenguraian bentuk dari suatu kata \nmenjadi bentuk kata dasarnya.&#39;, &#39;Untuk \nmelakukan stemming bahasa Indonesia \nkita dapat menggunakan library Python \nSastrawi yang sudah kita siapkan di awal.&#39;, &#39;Library Sastrawi menerapkan Algoritma \nNazief dan Adriani dalam melakukan \nstemming bahasa Indonesia.&#39;, &#39;Gambar 2.&#39;, &#39;7 Steaming \n2.6 \nPembagian Data \nData yang telah melalui proses pelabelan, \ndilakukan pembagian data menjadi 2, yaitu data \nlatih dan data uji.&#39;, &#39;Untuk masing-masing \npembagian data data latih dan uji ini penulis \nmembagi kembali menjadi 2 yaitu : - Pertama, \ndata latih berjumlah berjumlah lebih kecil dari \ndata uji - Kedua, data latih berjumlah lebih \nbanyak dari data uji.&#39;, &#39;2.7 \nAnalisis Klasifikasi \nPada tahap analisis dan hasil penelitian ini \nklasifikasi yang digunakan adalah algortima \nNaive \nBayes \nSebuah \nbentuk \nklasifikasi \nprobalistik yang berdasarkan Teorema Bayes \n(dari statistic Bayesian dangan strong (naïve) \nindependence assumption atau asumsi bebas.&#39;, &#39;Sebuah aturan yang lebih deskriptif untuk dasar \nsebuah model yang akan menjadi “model yang \nmemiliki ciri-ciri kebebasan \nPada tahap ini data yang sudah melewati \nproses crawling dan labeling akan di proses \nmenggunakan algoritma yang dipilih yaitu \nnaïve bayes.&#39;, &#39;Dalam tahapan ini mesin akan \nmengenali \npola \nyang \nkemudian \nakan \ndiklasifikasi ke dalam tiga kelas yaitu kelas \npositif, netral dan kelas negatif.&#39;, &#39;Naïve bayes memiliki bentuk umum \nyaitu: \n \n𝑷(𝑪|𝑿) = \n𝑷(𝑿|𝑪)𝑷(𝒄)\n𝑷(𝒙)\n \n \n(1) \n \nKeterangan: \nX  \n: Data dengan class yang \n  belum diketahui \nC  \n: Hipotesis data yang \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 501 \n \n  merupakan suatu class \n  spesifik \nP(C|X) \n: Probabilitas hipotesis C \n  berdasarkan kondisi \n  (posterior probability) \nP(c) \n: Probabilitas hipotesis C \n  (prior probability) \nP(x|c) \n: Probabilitas berdasarkan \n  kondisi pada hipotesis \nP(x) \n: Probabilitas c \nRumus naïve bayes diatas dapat diartikan \ndengan peluang masuknya sebuah data sampel \ndari karakteristik tertentu pada kelas C \n(Posterior).&#39;, &#39;C (Posterior) merupakan peluang \nmunculnya kelas C (sebelum data sampel \nmasuk, atau disebut prior),kemudian dikali \ndengan peluang mulculnya karakteristik sampel \ndari kelas C (sering disebut likelihood), dan \ndibagi dengan peluang munculnya karakteristik \ndata sampel secara global (evidence).&#39;, &#39;𝑷(𝑽𝟏|𝑪= 𝒄) =\n𝑪𝒐𝒖𝒏𝒕𝑻𝒆𝒓𝒎𝒔(𝒗𝟏,𝒅𝒐𝒄𝒔𝒗(𝒄))\n𝑨𝒍𝒍𝑻𝒆𝒓𝒎𝒔(𝒅𝒐𝒄𝒔(𝒄))\n      (2) \nSimbol V1 didalam persamaan diatas \nmelambangkan satu kata tertentu didalam \nkomentar \npada \nyoutube, \nsedangkan \nCountTermsv1.&#39;, &#39;docsv(c) menunjukan jumlah \nkemunculan suatu kata berlabel c (“positif”, \n“netral” atau “negatif”).&#39;, &#39;AllTerms1docs(c) \nmenunjukkan jumlah semua kata yang berlabel \nc yang ada pada dataset.&#39;, &#39;Tahapan Analisa perhitungan naïve bayes \npada penelitian ini dilakukan dengan metode \nklasifikasi yang telah diperoleh dari data \nlatih/Vocabulary hasil observasi.&#39;, &#39;Klasifikasi \nnaïve \nbayes \nperlu \ndilakukan \nuntuk \nmengkonversi \nteks-teks \nmenjadi \nangka \nsehingga bisa dibaca oleh algoritma naïve \nbayes.&#39;, &#39;Cara mengubah teks pada komentar ke \ndalam bentuk angka, yaitu menggunakan Count \nVectorizer.&#39;, &#39;Count vectorizer yaitu cara untuk \nmengubah serangkaian string tertentu menjadi \nrepresentasi frekuensi.&#39;, &#39;Adapun konversi teks \nmenjadi angka yang dilakukan pada penelitian \nini yaitu menggunakan count vectorizer.&#39;, &#39;Tahapan dari perhitungan naive bayes adalah  \n1.&#39;, &#39;Tahapan pertama dalam proses naive \nbayes classifier adalah menghitung \nprobabilitas masing-masing kelas dari \nkeseluruhan data training.&#39;, &#39;2.&#39;, &#39;Proses testing.&#39;, &#39;Proses ini berguna untuk \nmengetahui keakuratan model yang \ndibangun pada proses training, umumnya \ndigunakan data yang disebut test set \nuntuk memprediksi label.&#39;, &#39;Metode naive \nbayes classifier terdiri dari dua tahapan \ndalam proses klasifikasi teks, yaitu \ntahapan \npelatihan \ndan \ntahapan  \nklasifikasi.&#39;, &#39;Tahap pelatihan dilakukan \nproses analisis terhadap sample dokumen \nberupa pemilihan vocabulary yaitu kata \nyang \ndimungkinkan \nmuncul \ndalam \nkoleksi dokumen sample yang menjadi \nrepresentasi \ndokumen.&#39;, &#39;Langkah \nselanjutnya \nadalah \nmenentukan \nprobabilitas \nbagi \ntiap \nkategori \nberdasarkan sampel dokumen.&#39;, &#39;2.8 \nPengujian \nImplementasi \npada \npenelitian \nini \nmenggunakan bahasa pemrograman Phyton \nyang dijalankan pada media Google Collab.&#39;, &#39;Pada proses ini akan dilakukannya proses \nmenguji \nkinerja, menghitung \nnilai \nserta \nmengidentifikasi klasifikasi algoritma naïve \nbayes terhadap mesin yang telah dibangun \nmenggunakan \nconfusion \nmatrix \ndengan \nmenghitung accuracy,precision,recall dan F1-\nScore seperti pada persamaan berikut.&#39;, &#39;𝑨𝒄𝒄𝒖𝒓𝒂𝒄𝒚=\n𝑻𝑷+𝑻𝑵\n𝑷+𝑵=\n𝑻𝑷+𝑻𝑵\n𝑻𝑷+𝑻𝑵+𝑭𝑷+𝑭𝑵 \n(3)   \n𝑷𝒓𝒆𝒄𝒊𝒔𝒊𝒐𝒏=\n𝑻𝑷\n𝑻𝑷+𝑭𝑷𝑿 𝟏𝟎𝟎%         (4) \n𝑹𝒆𝒄𝒂𝒍𝒍= \n𝑻𝑷\n𝑻𝑷+𝑭𝑵                                   (5) \n𝑭𝟏−𝑺𝒄𝒐𝒓𝒆= 𝟐\n𝑷𝒓𝒆𝒄𝒊𝒔𝒊𝒐𝒏 .𝑹𝒆𝒄𝒂𝒍𝒍\n𝑷𝒓𝒆𝒄𝒊𝒔𝒊𝒐𝒏+𝑹𝒆𝒄𝒂𝒍𝒍   (6) \n2.9 \nEvaluasi \nLangkah selanjutnya adalah melakukan \nevaluasi yang bertujuan untuk mengetahui \nsejauhmana tingkat akurasi hasil klasifikasi data \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 502 \n \nmenggunakan metode naive bayes terhadap data \ntesting/uji.&#39;, &#39;4.&#39;, &#39;HASIL DAN PEMBAHASAN  \nPembersihan \ndata \ndilakukan \npada \ntahapan prepocessing text.&#39;, &#39;Didalam data \ndidapatkan ulasan yang ditulis oleh para \nPengguna Aplikasi Threads di Playstore.&#39;, &#39;Pada \nkomentar ini terdapat 2 pembagian komentar \nyaitu komentar positif dan juga komentar \nnegatif.&#39;, &#39;Data terdiri dari 1001 ulasan denagn \nkomentar (71,7%) atau 718 komentar positif, \ndan (28,3%) atau 283 komentar negatif seperti \nyang terlihat pada gambar \n \nGambar 3.&#39;, &#39;1 Presentasi Data Sentimen \nGambar  3.1 dapat dilihat bahwa data dengan \nkelas negatif sebesar 25,1% dan kelas positif \nsebesar 74,9%.&#39;, &#39;Data tersebut akan ditampilkan \nmenjadi WordCloud untuk mengetahui kata \npositif dan negatif yang sering muncul seperti \npada Gbr.&#39;, &#39;4 dan Gbr.&#39;, &#39;5 \n \nGambar 3.&#39;, &#39;2 Word Cloud sentimen Positif \n \nGambar 3.&#39;, &#39;3 word cloud sentimen negatif \nData tersebut kemudian dipecah menjadi \ndata latih sebesar 80% dan data uji sebesar 20% \nmenggunakan vektor TF-IDF.&#39;, &#39;Kemudian data \nakan \nditraining \nmenggunakan \nAlgoritme \nklasifikasi Naive Bayes.&#39;, &#39;Pada Algoritme Naive Bayes, data yang \ntelah di split kemudian di train dan di test \nlangsung yang mendapatkan hasil akhir berupa \nakurasi sebesar 82%.&#39;, &#39;Hasil dari klasifikasi \nmenggunakan Algoritme Naive Bayes dapat \ndilihat pada Gbr.&#39;, &#39;Gambar 3.&#39;, &#39;4 Hasil Pengujian \nHasil eksperimen diatas juga dapat dilihat dalam \nbentuk grafik pada gambar 10.&#39;, &#39;Gambar 3.&#39;, &#39;5 Grafik Hasil Pengujian \nDari gambar tersebut di dapat hasil uji akurasi \nsebanyak 82 %, Presisi sebanyak 70%, Recall \n60% dan F1-Score 65%.&#39;, &#39;Dapat simpulkan \nbahwa algoritma Naive Bayes classifier cukup \nberhasil memprediksi kategori sentimen yang \n\x0cJITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 503 \n \nbenar karena dari hasil uji akurasi algoritma \nnaïve bayes classifier mendapatkan akurasi \nyang tinggi yaitu 82% yang artinya kinerja \nalgoritma \nnaïve \nbayes \nclassifier \ndapat \nmengklasifikasi data teks dengan sangat baik \n5.&#39;, &#39;KESIMPULAN  \nBerdasarkan hasil analisis dan pengujian \nyang telah dilakukan pada, maka dapat diambil \nkesimpulan sebagai berikut : \n1.&#39;, &#39;Algoritma Naïve Bayes Classifier sangat \nefektif untuk digunakan sebagai proses \nklasifikasi tweet yang dibutuhkan dalam \nsistem analisis sentiment ini dimana nilai \nyang di dapatkan dalam pengujian \nsampai 82%.&#39;, &#39;2.&#39;, &#39;Metode Naïve Bayes Classifier dapat \ndigunakan untuk melakukan klasifikasi \ntweets dengan cukup baik pada sistem \nanalisis sentimen \nDAFTAR PUSTAKA  \n \n[1]  S. Dyantoro, “Zuckerberg Resmi Rilis Aplikasi Baru Threads, \nPesaing Twitter Yang Dikembangkan Tim Instagram,” \nTempo.Co, \n6 \nJuli \n2023.&#39;, &#39;[Online].&#39;, &#39;Available: \nHttps://Tekno.Tempo.Co/Read/1745038/Zuckerberg-Resmi-\nRilis-Aplikasi-Baru-Threadspesaing-Twitter-Yang-\nDikembangkan-Tim-Instagram.&#39;, &#39;[2]  S. H. P. E. A. D. Imam Fahrur Rozi, “Implementasi \nOpinion Mining (Analisis Sentimen) Untuk Ekstraksi \nData Opini Publik Pada Perguruan Tinggi,” Jurnal \nEECCIS, Vol.&#39;, &#39;VI, 2012.&#39;, &#39;[3]  S. M. Yulian Findawati, Buku Ajar Text Mining, \nSidoarjo: UMSIDA Press, 2020.&#39;, &#39;[4]  S. Adhi Viky, “ANALISIS SENTIMEN TWITTER \nMENGGUNAKAN \nTEXT \nMINING \nDENGAN \nALGORITMA \nNAÏVE \nBAYES \nCLASSIFIER,” \nProsiding SINTAK, 2018.&#39;, &#39;[5]  D. Habib Al Rasyid Harpizon, “Analisis Sentimen \nKomentar Di Youtube Tentang Ceramah Ustadz Abdul \nSomad Menggunkann Algoritma Naive Bayes,” Jurnal \nNasional Komputasi Dan Teknologi Informasi, Vol.&#39;, &#39;5, \nPp.&#39;, &#39;131 - 140, 2022.&#39;, &#39;[6]  D. Rita Apriani, “ANALISIS SENTIMEN DENGAN \nNAÏVE \nBAYES \nTERHADAP \nKOMENTAR \nAPLIKASI TOKOPEDIA,” Jurnal Rekayasa Teknologi \nNusa Putra., Vol.&#39;, &#39;VI, Pp.&#39;, &#39;54 - 62, 2019.&#39;, &#39;[7]  M. G. Andriawan And T. Ernawati, “PENGGUNAAN \nALGORITMA NAÏVE BAYES DAN SUPPORT \nVECTOR MACHINE UNTUK ANALISIS SENTIMEN \nKONFLIK \nPALESTINA \nDAN \nISRAEL \nPADA \nPLATFORM X,” Jurnal Informatika Dan Teknik Elektro \nTerapan, \nVol.&#39;, &#39;12, \nNo.&#39;, &#39;3, \nAug. \n2024, \nDoi: \n10.23960/Jitet.V12i3.4943.&#39;, &#39;[8] M. Ajeng D, “Comparison Of SVM &amp; Naïve Bayes \nAlgorithm For Sentiment Analysis Toward West Java \nGovernor Candidate Period 2018-2023 Based On Public \nOpinion On Twitter,” Int.&#39;, &#39;Conf.&#39;, &#39;Cyber IT Serv.&#39;, &#39;Manag., \nPp.&#39;, &#39;1 - 6 , 2018.&#39;, &#39;[9] Alfiah, N. &quot;Klasifikasi Penerima Bantuan Sosial \nProgram Keluarga Harapan  Menggunakan Metode \nNaïve \nBayes&quot;.&#39;, &#39;Respati,16(1),32.2021 \nDoi: \n10.35842/Jtir.V16i1.386 \n[10] Lutfiyani, R. And Retnowati, N. &quot;Implementasi \nPendeteksian Spam Email Menggunakan Metode Text \nMining Dengan Algoritma Naïve Bayes Dan Decision \nTree J48&quot;.&#39;, &#39;Jurnal Komputer Dan Informatika, 9(2), 244-\n252.2021.&#39;, &#39;Doi: 10.35508/Jicon.V9i2.5304 \n[11] J. Khatib Sulaiman, A. Shopee Salman Alfaris, And U. \nAmikom Yogyakarta, “Komparasi Metode KNN Dan \nNaive Bayes Terhadap Analisis Sentimen Pengguna,” \nIndonesian Journal Of Computer Science Attribution, \nVol.&#39;, &#39;12, No.&#39;, &#39;5, Pp.&#39;, &#39;2023–2766.&#39;, &#39;[12] A. Muzakir, A. Desiani, And A. Amran, “Klasifikasi \nPenyakit Kanker Prostat Menggunakan Algoritma Naïve \nBayes Dan K-Nearest Neighbor,” Komputika\u202f: Jurnal \nSistem Komputer, Vol.&#39;, &#39;12, No.&#39;, &#39;1, Pp.&#39;, &#39;73–79, May 2023, \nDoi: 10.34010/Komputika.V12i1.9629.&#39;, &#39;[13] Y. Christian, J. Putra, A. Winata, N. Ricky, R. Jeonanto, \nAnd \nH. \nArtikel, \n“Url\u202f: \nHttp://Studentjournal.Umpo.Ac.Id/Index.Php/Kompute\nk PREDIKSI KUALITAS AIR MENGGUNAKAN \nALGORITMA NAÏVE BAYES DAN RANDOM \nFOREST,” \n2022.&#39;, &#39;[Online].&#39;, &#39;Available: \nHttp://Studentjournal.Umpo.Ac.Id/Index.Php/Kompute\nk \n[14] W. P. Nurmayanti, “Penerapan Naive Bayes Dalam \nMengklasifikasikan Masyarakat Miskin Di Desa Lepak,” \nGeodika: Jurnal Kajian Ilmu Dan Pendidikan Geografi, \nVol.&#39;, &#39;5, No.&#39;, &#39;1, Pp.&#39;, &#39;123–132, Jun.&#39;, &#39;2021, Doi: \n10.29408/Geodika.V5i1.3430.&#39;, &#39;JITET (Jurnal Informatika dan Teknik Elektro Terapan)    pISSN: 2303-0577   eISSN: 2830-7062 \n Lukmana  dkk  \n \n 504 \n \n[15] M. I. Fikri, T. S. Sabrila, Y. Azhar, And U. M. Malang, \n“Perbandingan Metode Naïve Bayes Dan Support Vector \nMachine Pada Analisis Sentimen Twitter”.&#39;, &#39;[16] ria, Y. Cahyana, D. Sulistya, And K. A. Baihaqi, \n“Pemilihan Algoritma Terbaik Untuk Klasifikasi Jenis \nE-Mail Dengan Metode TF-IDF,” Jurnal Riset Sistem \nInformasi Dan Teknik Informatika (JURASIK, Vol.&#39;, &#39;9, \nNo.&#39;, &#39;1, Pp.&#39;, &#39;398–407, 2024, [Online].&#39;, &#39;Available: \nHttps://Tunasbangsa.Ac.Id/Ejurnal/Index.Php/Jurasik \n[17] L. Oktaria Sihombing And B. Arif Dermawan, \n“Edumatic: Jurnal Pendidikan Informatika Sentimen \nAnalisis Customer Review Produk Shopee Indonesia \nMenggunakan Algortima Naïve Bayes Classifier,” Vol.&#39;, &#39;5, \nNo.&#39;, &#39;2, \nPp.&#39;, &#39;233–242, \n2021, \nDoi: \n10.29408/Edumatic.V5i2.4089.&#39;, &#39;[18] A. Prayoga Permana, K. Ainiyah, And K. Fahmi Hayati \nHolle, “Analisis Perbandingan Algoritma Decision Tree, \nKnn, Dan Naive Bayes Untuk Prediksi Kesuksesan Start-\nUp,” \n2021.&#39;, &#39;[Online].&#39;, &#39;Available: \nHttps://Www.Kaggle.Com/Manishkc06/Startup-\nSuccess-Prediction.&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                               kalimat
+0    JITET (Jurnal Informatika dan Teknik Elektro T...
+1                                               13 No.
+2    2, pISSN: 2303-0577 eISSN: 2830-7062          ...
+3    Mokodompit, Kodya \nKendari, Sulawesi Tenggara...
+4                                   0401-3194163 /Fax.
+..                                                 ...
+187                                           2, \nPp.
+188  233–242, \n2021, \nDoi: \n10.29408/Edumatic.V5...
+189  [18] A. Prayoga Permana, K. Ainiyah, And K. Fa...
+190                                          [Online].
+191  Available: \nHttps://Www.Kaggle.Com/Manishkc06...
+
+[192 rows x 1 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Untuk membuat word graph</p>
+<p>Lanjutkan dengan menggunakan <a class="reference external" href="https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/">https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Read the &#39;kalimat.csv&#39; file into a pandas DataFrame.</span>
+<span class="n">df_kalimat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># 2. Access the &#39;kalimat&#39; column and 3. Concatenate all text entries into a single string.</span>
+<span class="n">all_text</span> <span class="o">=</span> <span class="n">df_kalimat</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;First 500 characters of the concatenated text:</span><span class="se">\n</span><span class="si">{</span><span class="n">all_text</span><span class="p">[:</span><span class="mi">500</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First 500 characters of the concatenated text:
+JITET (Jurnal Informatika dan Teknik Elektro Terapan) 
+ 
+Vol. 13 No. 2, pISSN: 2303-0577 eISSN: 2830-7062              http://dx.doi.org/10.23960/jitet.v13i2.6250 
+ 
+ 
+ 496 
+ 
+ANALISIS SENTIMEN TERHADAP ULASAN PENGGUNA 
+APLIKASI THREADS INSTAGRAM DI PLAYSTORE 
+MENGGUNAKAN ALGORITMA NAIVE BAYES 
+ 
+La Ode Lukmana1*, Dian Ramadani L2, Putri Elisya3 
+1,2 Universitas Halu Oleo; Kampus Bumi Tridharma Anduonohu, Jalan H.E.A. Mokodompit, Kodya 
+Kendari, Sulawesi Tenggara 93232; Telp. 0401-3194163 /Fax. 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df_to_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Pastikan input string</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="c1"># Hapus karakter spesifik</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;◼&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Deteksi kata berulang seperti &quot;laki-laki&quot;, &quot;pura-pura&quot;</span>
+    <span class="c1"># Pola: kata-kata yang sama dipisah tanda hubung</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\b(\w+)-\1\b&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Hapus punctuation</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+
+    <span class="c1"># Hapus angka</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\d+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Lowercase</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Hapus kata yang hanya satu huruf (mis. &quot;v&quot;, &quot;a&quot;, &quot;b&quot;)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\b[a-zA-Z]\b&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Hilangkan spasi berlebih</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># --- Tambahan: hapus kata berulang berurutan + filter 1 huruf lagi (jaga-jaga) ---</span>
+    <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
+        <span class="n">tokens</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+        <span class="n">cleaned_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">tok</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
+            <span class="c1"># skip kalau hanya satu huruf</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="c1"># skip kalau sama dengan kata sebelumnya (kata berulang)</span>
+            <span class="k">if</span> <span class="n">tok</span> <span class="o">==</span> <span class="n">prev</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">cleaned_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">tok</span>
+
+        <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cleaned_tokens</span><span class="p">)</span>
+    <span class="c1"># ----------------------------------------------------------------------</span>
+
+    <span class="k">return</span> <span class="n">text</span>
+
+<span class="c1"># Terapkan pembersihan</span>
+<span class="n">df_to_clean</span><span class="p">[</span><span class="s1">&#39;cleaned_kalimat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_to_clean</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+
+<span class="c1"># Simpan ke CSV</span>
+<span class="n">df_to_clean</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;kalimat_cleaned.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processed data with cleaned text saved to &#39;kalimat_cleaned.csv&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_to_clean</span><span class="p">[[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">,</span> <span class="s1">&#39;cleaned_kalimat&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processed data with cleaned text saved to &#39;kalimat_cleaned.csv&#39;
+                                             kalimat  \
+0  JITET (Jurnal Informatika dan Teknik Elektro T...   
+1                                             13 No.   
+2  2, pISSN: 2303-0577 eISSN: 2830-7062          ...   
+3  Mokodompit, Kodya \nKendari, Sulawesi Tenggara...   
+4                                 0401-3194163 /Fax.   
+
+                                     cleaned_kalimat  
+0  jitet jurnal informatika dan teknik elektro te...  
+1                                                 no  
+2  pissn eissn httpdxdoiorgjitetvi analisis senti...  
+3    mokodompit kodya kendari sulawesi tenggara telp  
+4                                                fax  
+</pre></div>
+</div>
+</div>
+</div>
+<p>##Bigram dan unigram</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">ngrams</span>
+
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+
+<span class="c1"># 1. Filter: Hanya huruf (isalpha), lowercase, &amp; hapus stopword Indonesia</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">))</span>
+<span class="n">pure_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">teks</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="k">if</span> <span class="n">w</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+
+<span class="c1"># 2. Buat Unigram &amp; Bigram</span>
+<span class="n">unigrams</span> <span class="o">=</span> <span class="n">pure_words</span>
+<span class="n">bigrams</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bg</span><span class="p">)</span> <span class="k">for</span> <span class="n">bg</span> <span class="ow">in</span> <span class="n">ngrams</span><span class="p">(</span><span class="n">pure_words</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+
+<span class="c1"># 3. Gabungkan</span>
+<span class="n">all_tokens</span> <span class="o">=</span> <span class="n">unigrams</span> <span class="o">+</span> <span class="n">bigrams</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hasil Preprocessing: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_tokens</span><span class="p">)</span><span class="si">}</span><span class="s2"> total token.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh token (campuran unigram &amp; bigram):&quot;</span><span class="p">,</span> <span class="n">all_tokens</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Preprocessing: 3991 total token.
+Contoh token (campuran unigram &amp; bigram): [&#39;http&#39;, &#39;analisis&#39;, &#39;sentimen&#39;, &#39;ulasan&#39;, &#39;pengguna&#39;, &#39;aplikasi&#39;, &#39;threads&#39;, &#39;instagram&#39;, &#39;playstore&#39;, &#39;algoritma&#39;]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+</div>
+</div>
+<p>##Matriks Ko-okurensi, Centrality, dan 20 Kata penting</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">Counter</span>
+
+<span class="c1"># Pastikan resource NLTK sudah terunduh</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+
+<span class="c1"># =========================================================</span>
+<span class="c1"># STEP 1: PREPROCESSING (BAHASA INDONESIA)</span>
+<span class="c1"># =========================================================</span>
+<span class="c1"># Kita gunakan variabel &#39;all_text&#39; yang sudah Anda buat di cell sebelumnya</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">))</span>
+
+<span class="c1"># Syarat dosen: Hanya huruf (isalpha), tanpa kata tidak jelas (len &gt; 3)</span>
+<span class="n">pure_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">all_text</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+              <span class="k">if</span> <span class="n">w</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># Membuat gabungan Unigram (1 kata) dan Bigram (2 kata)</span>
+<span class="n">all_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pure_words</span><span class="p">)):</span>
+    <span class="n">all_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pure_words</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1"># Unigram</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pure_words</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">all_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pure_words</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pure_words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># Bigram</span>
+
+<span class="c1"># --- 1. PRINT HASIL PREPROCESSING ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--- HASIL PREPROCESSING (TOKEN GABUNGAN UNIGRAM &amp; BIGRAM) ---&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total semua token: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_tokens</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;20 Token pertama:&quot;</span><span class="p">,</span> <span class="n">all_tokens</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># =========================================================</span>
+<span class="c1"># STEP 2: MENGHITUNG CO-OCCURRENCE (WINDOW SIZE 3)</span>
+<span class="c1"># =========================================================</span>
+<span class="n">window_size</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">co_occurrences</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">Counter</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_tokens</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="n">window_size</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_tokens</span><span class="p">),</span> <span class="n">i</span> <span class="o">+</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="n">co_occurrences</span><span class="p">[</span><span class="n">token</span><span class="p">][</span><span class="n">all_tokens</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># =========================================================</span>
+<span class="c1"># STEP 3: MEMBUAT MATRIKS KO-OKURENSI</span>
+<span class="c1"># =========================================================</span>
+<span class="n">unique_tokens</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">all_tokens</span><span class="p">)))</span>
+<span class="n">token_index</span> <span class="o">=</span> <span class="p">{</span><span class="n">token</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_tokens</span><span class="p">)}</span>
+<span class="n">matrix_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_tokens</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi matriks dengan nol</span>
+<span class="n">co_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">matrix_size</span><span class="p">,</span> <span class="n">matrix_size</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># Isi matriks berdasarkan hubungan antar token</span>
+<span class="k">for</span> <span class="n">token</span><span class="p">,</span> <span class="n">neighbors</span> <span class="ow">in</span> <span class="n">co_occurrences</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">co_matrix</span><span class="p">[</span><span class="n">token_index</span><span class="p">[</span><span class="n">token</span><span class="p">]][</span><span class="n">token_index</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]]</span> <span class="o">=</span> <span class="n">count</span>
+
+<span class="c1"># Simpan ke DataFrame agar rapi</span>
+<span class="n">co_matrix_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">co_matrix</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">unique_tokens</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">unique_tokens</span><span class="p">)</span>
+
+<span class="c1"># =========================================================</span>
+<span class="c1"># STEP 4: MEMBUAT GRAF DAN MENGHITUNG 4 CENTRALITY</span>
+<span class="c1"># =========================================================</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_pandas_adjacency</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sedang menghitung Centrality (mohon tunggu)...&quot;</span><span class="p">)</span>
+<span class="n">pagerank</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">degree</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">degree_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">betweenness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">closeness</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1"># Simpan hasil perhitungan ke dalam DataFrame</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Node&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">pagerank</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span>
+    <span class="s1">&#39;PageRank&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">pagerank</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span>
+    <span class="s1">&#39;Degree&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">degree</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span>
+    <span class="s1">&#39;Betweenness&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">betweenness</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span>
+    <span class="s1">&#39;Closeness&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">closeness</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="p">})</span>
+
+<span class="c1"># Urutkan berdasarkan PageRank tertinggi</span>
+<span class="n">top_20</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;PageRank&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># =========================================================</span>
+<span class="c1"># STEP 5: OUTPUT SESUAI PERMINTAAN</span>
+<span class="c1"># =========================================================</span>
+
+<span class="c1"># Menampilkan Matriks terlebih dahulu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- MATRIKS KO-OKURENSI (10x10 Sampel) ---&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">,</span> <span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+
+<span class="c1"># Menampilkan Top 20 kata penting</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- TOP 20 KATA PENTING (Berdasarkan PageRank) ---&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_20</span><span class="p">[[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span> <span class="s1">&#39;PageRank&#39;</span><span class="p">,</span> <span class="s1">&#39;Degree&#39;</span><span class="p">,</span> <span class="s1">&#39;Betweenness&#39;</span><span class="p">,</span> <span class="s1">&#39;Closeness&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--- HASIL PREPROCESSING (TOKEN GABUNGAN UNIGRAM &amp; BIGRAM) ---
+Total semua token: 3599
+20 Token pertama: [&#39;jitet&#39;, &#39;jitet jurnal&#39;, &#39;jurnal&#39;, &#39;jurnal informatika&#39;, &#39;informatika&#39;, &#39;informatika teknik&#39;, &#39;teknik&#39;, &#39;teknik elektro&#39;, &#39;elektro&#39;, &#39;elektro terapan&#39;, &#39;terapan&#39;, &#39;terapan pissn&#39;, &#39;pissn&#39;, &#39;pissn eissn&#39;, &#39;eissn&#39;, &#39;eissn http&#39;, &#39;http&#39;, &#39;http analisis&#39;, &#39;analisis&#39;, &#39;analisis sentimen&#39;]
+--------------------------------------------------
+Sedang menghitung Centrality (mohon tunggu)...
+
+--- MATRIKS KO-OKURENSI (10x10 Sampel) ---
+                    abdul  abdul somad  about  about issue  abstract  \
+abdul                   0            1      0            0         0   
+abdul somad             1            0      0            0         0   
+about                   0            0      0            1         0   
+about issue             0            0      1            0         0   
+abstract                0            0      0            0         0   
+abstract sentiment      0            0      0            0         1   
+abstrak                 0            0      0            0         0   
+abstrak analisis        0            0      0            0         0   
+accepted                0            0      0            0         0   
+accepted maret          0            0      0            0         0   
+
+                    abstract sentiment  abstrak  abstrak analisis  accepted  \
+abdul                                0        0                 0         0   
+abdul somad                          0        0                 0         0   
+about                                0        0                 0         0   
+about issue                          0        0                 0         0   
+abstract                             1        0                 0         0   
+abstract sentiment                   0        0                 0         0   
+abstrak                              0        0                 1         0   
+abstrak analisis                     0        1                 0         0   
+accepted                             0        0                 0         0   
+accepted maret                       0        0                 0         1   
+
+                    accepted maret  
+abdul                            0  
+abdul somad                      0  
+about                            0  
+about issue                      0  
+abstract                         0  
+abstract sentiment               0  
+abstrak                          0  
+abstrak analisis                 0  
+accepted                         1  
+accepted maret                   0  
+
+--- TOP 20 KATA PENTING (Berdasarkan PageRank) ---
+             Node  PageRank   Degree  Betweenness  Closeness
+             data  0.016226 0.131202     0.250907   0.413331
+            bayes  0.009693 0.069179     0.109794   0.386359
+         sentimen  0.008735 0.075382     0.104424   0.394281
+         analisis  0.007825 0.066317     0.104133   0.392362
+           proses  0.006008 0.056775     0.063538   0.365411
+        algoritma  0.005717 0.043416     0.052813   0.348984
+analisis sentimen  0.005464 0.042462     0.040753   0.371105
+      klasifikasi  0.005248 0.055821     0.065540   0.378408
+            naïve  0.005205 0.034351     0.024442   0.343494
+         aplikasi  0.004992 0.040553     0.049196   0.347538
+      naïve bayes  0.004848 0.028626     0.016661   0.350502
+           mining  0.004441 0.035782     0.033580   0.351206
+            naive  0.004407 0.031011     0.014913   0.342540
+      naive bayes  0.004354 0.030057     0.033801   0.380261
+           sosial  0.004254 0.031966     0.018697   0.293763
+       penelitian  0.004012 0.039122     0.042380   0.362944
+         pengguna  0.003970 0.034351     0.038666   0.342148
+          threads  0.003921 0.030057     0.032902   0.333174
+            hasil  0.003784 0.035305     0.026630   0.352743
+           jurnal  0.003637 0.030057     0.038853   0.316856
+</pre></div>
+</div>
+</div>
+</div>
+<p>##Visualisasi Graph</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_pandas_adjacency</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="p">)</span>
+
+<span class="c1"># Visualize the graph</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="c1"># positions for all nodes - k regulates the distance between nodes</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Co-occurrence Network Graph&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span> <span class="c1"># Hide axes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119914 (\N{MATHEMATICAL BOLD ITALIC CAPITAL C}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119952 (\N{MATHEMATICAL BOLD ITALIC SMALL O}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119958 (\N{MATHEMATICAL BOLD ITALIC SMALL U}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119951 (\N{MATHEMATICAL BOLD ITALIC SMALL N}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119957 (\N{MATHEMATICAL BOLD ITALIC SMALL T}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119931 (\N{MATHEMATICAL BOLD ITALIC CAPITAL T}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119942 (\N{MATHEMATICAL BOLD ITALIC SMALL E}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119955 (\N{MATHEMATICAL BOLD ITALIC SMALL R}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119950 (\N{MATHEMATICAL BOLD ITALIC SMALL M}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119956 (\N{MATHEMATICAL BOLD ITALIC SMALL S}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119927 (\N{MATHEMATICAL BOLD ITALIC CAPITAL P}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119940 (\N{MATHEMATICAL BOLD ITALIC SMALL C}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119946 (\N{MATHEMATICAL BOLD ITALIC SMALL I}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119912 (\N{MATHEMATICAL BOLD ITALIC CAPITAL A}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119949 (\N{MATHEMATICAL BOLD ITALIC SMALL L}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119941 (\N{MATHEMATICAL BOLD ITALIC SMALL D}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 119959 (\N{MATHEMATICAL BOLD ITALIC SMALL V}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="_images/69f65b06004e477c39212180738af5ddf78b41feabd84ff372a3ac4a196395d8.png" src="_images/69f65b06004e477c39212180738af5ddf78b41feabd84ff372a3ac4a196395d8.png" />
+</div>
+</div>
+<p>##Graph 20 kata Terpenting</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># 1. Membuat objek graf dari Matriks Ko-okurensi</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_pandas_adjacency</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="p">)</span>
+
+<span class="c1"># Ambil Top 20 node (Unigram &amp; Bigram) berdasarkan PageRank</span>
+<span class="c1"># Ini agar graf tidak terlalu penuh dan terlihat profesional</span>
+<span class="n">n_top</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">top_nodes</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;PageRank&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n_top</span><span class="p">)[</span><span class="s1">&#39;Node&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">sub_G</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">subgraph</span><span class="p">(</span><span class="n">top_nodes</span><span class="p">)</span>
+
+<span class="c1"># 3. Pengaturan Visualisasi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Layout: Spring layout membuat node menyebar secara alami (seperti pegas)</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">sub_G</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Ukuran Node: Disesuaikan dengan nilai PageRank (semakin penting, semakin besar)</span>
+<span class="n">node_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="n">results</span><span class="p">[</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">n</span><span class="p">][</span><span class="s1">&#39;PageRank&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">200000</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">sub_G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+
+<span class="c1"># Gambar Node &amp; Garis</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">sub_G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="n">node_sizes</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;skyblue&quot;</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">sub_G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">)</span>
+
+<span class="c1"># Gambar Label (Nama Kata/Bigram)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">sub_G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Co-occurrence Network Graph - Top </span><span class="si">{</span><span class="n">n_top</span><span class="si">}</span><span class="s2"> Important Tokens&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span> <span class="c1"># Menghilangkan sumbu koordinat</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/c5fa8c416c8b45f83cf5daa630475c738d1461fa3b346e6567db107370678d97.png" src="_images/c5fa8c416c8b45f83cf5daa630475c738d1461fa3b346e6567db107370678d97.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pagerank_scores</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perhitungan PageRank untuk tiap node:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil perhitungan PageRank untuk tiap node:
+data: 0.0162
+bayes: 0.0097
+sentimen: 0.0087
+analisis: 0.0078
+proses: 0.0060
+algoritma: 0.0057
+analisis sentimen: 0.0055
+klasifikasi: 0.0052
+naïve: 0.0052
+aplikasi: 0.0050
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Membuat DataFrame pandas dari dictionary pagerank_scores</span>
+<span class="n">pagerank_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Kata&#39;</span><span class="p">,</span> <span class="s1">&#39;Skor PageRank&#39;</span><span class="p">])</span>
+
+<span class="c1"># 2. Mengurutkan DataFrame berdasarkan &#39;Skor PageRank&#39; secara menurun</span>
+<span class="n">pagerank_df</span> <span class="o">=</span> <span class="n">pagerank_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Skor PageRank&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># 3. Menampilkan 20 kata teratas dari DataFrame yang sudah diurutkan</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;20 kata dengan Skor PageRank tertinggi:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pagerank_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20 kata dengan Skor PageRank tertinggi:
+                 Kata  Skor PageRank
+0                data       0.016226
+1               bayes       0.009693
+2            sentimen       0.008735
+3            analisis       0.007825
+4              proses       0.006008
+5           algoritma       0.005717
+6   analisis sentimen       0.005464
+7         klasifikasi       0.005248
+8               naïve       0.005205
+9            aplikasi       0.004992
+10        naïve bayes       0.004848
+11             mining       0.004441
+12              naive       0.004407
+13        naive bayes       0.004354
+14             sosial       0.004254
+15         penelitian       0.004012
+16           pengguna       0.003970
+17            threads       0.003921
+18              hasil       0.003784
+19             jurnal       0.003637
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
